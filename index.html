@@ -1,26 +1,41 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="es">
 <head>
-    <title>Mis hobbies</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script defer src="./js/script.js"></script> 
 </head>
+<body>
 
-<body>
-</head>
-<body>
-    <header>
-        <h1>Mis Hobbies</h1>
-    </header>
-<ul>
-        <li id="hobbie1">Mi primer pasatriempo y mi favorito es ir a jugar futbol ya sea con mis amigos o retos con gente desconocida.</li>
-        <li id="hobbie2">Mi segundo hobbie es pasar tiempo de calidad con mi familia, ya sea salir a comer o estar en la casa viendo una pelicula o serie </li>
-        <li id="hobbie3">Mi tercer pasatiempo es jugar videojuegos, ya sea solo o con mis amigos, juegos como los de shooter o de futbol</li>
-    </ul>
-    
-    <footer>
-        Estos son mis hobbies ¡Gracias por ver!
-    </footer>
+    <section>
+        <h2>Calculadora</h2>
+        <form id="formularioPrestamo">
+            <label for="monto">Monto del préstamo:</label>
+            <input id="monto" type="number">
+
+            <label for="cuotas">Número de cuotas:</label>
+            <input id="cuotas" type="number">
+
+            <label for="interes">Porcentaje de tasa de interés anual:</label>
+            <input id="interes" type="number">
+
+            <button type="submit" id="calcular">Calcular</button>
+            <span id="mensajeError">Todos los campos son obligatorios</span>
+        </form>
+    </section>
+
+    <section id="resultados" class="hidden">
+        <h2>Resultados</h2>
+        <ul>
+            <li><strong>Pago mensual:</strong> <span id="pagoMensual"></span></li>
+            <li><strong>Interés mensual:</strong> <span id="interesMensual"></span></li>
+            <li><strong>Con interés:</strong> <span id="totalConInteres"></span></li>
+            <li><strong>Sin interés:</strong> <span id="totalSinInteres"></span></li>
+            <li><strong>Tiempo total:</strong> <span id="tiempoTotal"></span></li>
+        </ul>
+    </section>
+
+    <button id="cambiarColor">Click aqui para cambiar el color del fondo</button>
 </body>
 </html>
